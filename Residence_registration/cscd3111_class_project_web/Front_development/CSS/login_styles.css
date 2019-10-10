@@ -1,0 +1,91 @@
+
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+
+body
+{
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+	background:url("hall_image.jpg") no-repeat ;
+	background-size: cover;
+}
+
+#form-entry.login-box
+{
+	width: 280px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: black;
+}
+
+#form-entry.login-box h1
+{
+	float: left;
+	font-size: 40px;
+	border-bottom: 10px solid #4caf50;
+	margin-bottom: 50px;
+	padding:13px 0;
+	
+}
+
+#form-entry
+{
+	margin-left: 40%;
+	margin-right: 40%;
+	margin-top: 10%;
+
+}
+
+.textbox
+{
+	width: 100%;
+	overflow: hidden;
+	font-size: 20px;
+ 	padding:8px 0;
+	margin:8px 0;
+	border-bottom: 1px solid;
+}
+
+.textbox i
+{
+	width: 26px;
+	float:left;
+	text-align:center;
+
+}
+.textbox input
+{
+
+	border:none;
+	outline: none;
+	background: none;
+	color:black;
+	font-size: 18px;
+	width:80px;
+	float: left;
+	margin: 0 10px;
+
+}
+
+.btn
+{
+	width:100%;
+	background: none;
+	border:none;
+	padding:5px;
+	font-size: 18px;
+	cursor:pointer;
+}
+
+.my-link ul
+{
+	margin-left: 30%;
+	margin-right: 30%;
+	margin-top: 5%;
+	font-size: 18px;
+	font:sans-serif;
+
+}

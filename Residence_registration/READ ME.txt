@@ -1,0 +1,17 @@
+10659057
+> Make sure you install all your modules:
+o Express
+o Mongodb
+o Mongoose
+o Nodemon
+o Express- Router
+o Ejs
+o Body- parser
+
+
+> Make sure you are connected to Online, inorder for the database to be Connected
+> When the database is conneceted, you can run the app.js eg: node app.js
+> The port number used was 3000
+> You then go into your browser and type localhost:3000 in the address bar
+> You can begin your entries
+

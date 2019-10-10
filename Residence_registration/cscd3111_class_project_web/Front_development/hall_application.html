@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+
+    <meta charset= "UTF-8">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+
+    <meta http-equiv= "X-UA-Compatible" content="ie=edge">
+
+    <title>Hall Application</title>
+
+    <link rel="stylesheet" type="text/css" href=" ./CSS/application.css">
+
+    <script>
+        
+        function random()
+        {
+            var a=document.getElementById('input').value;
+
+            if(a=== "Mensah Sarbah Hall")
+            {
+                var array=['A', 'B', 'C' , 'D', 'Main Hall'];
+            }
+            else if(a=== "Akuafo Hall")
+            {
+                var array=['A', 'B', 'C' , 'D', 'Main Hall'];
+            }
+            else if(a=== "Legon Hall")
+            {
+                var array=['A', 'B', 'C' , 'D', 'Main Hall'];
+            }
+            else if(a=== "Volta Hall")
+            {
+                var array=['A', 'B', 'C' , 'D', 'Main Hall'];
+            }
+            else if(a=== "Commonwealth Hall")
+            {
+                var array=['A', 'B', 'C' , 'D', 'Main Hall'];
+            }
+            else
+            {
+                var array=["No Annex"];
+            }
+
+            var string = "  ";
+
+            for(i=0; i<array.length;i++)
+            {
+                string = string + "<option>" + array[i] + "</option>";
+            }
+
+            string = "<select name= 'lol' >"+ string + "</select> ";
+
+            document.getElementById('output').innerHTML= string;
+
+            }
+
+    </script>
+
+</head>
+
+<body>
+
+    
+    <form id="form_entry"  method="POST" action="/hall_application" style="margin-left:40%; margin-right: 40%; margin-top: 10%">
+
+        <div class="registration">
+
+            <h1>Registration</h1>
+
+            <div class="gender">
+
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+
+            </div>
+
+        <br>
+       
+       <div class='user'>
+
+        <label for="">Hall/Residence</label><br>
+
+        <select id="input" name="hall_name" onclick="random()">
+            
+            <option>Mensah Sarbah Hall</option>
+            <option>Akuafo Hall</option>
+            <option>Commonwealth Hall</option>
+            <option>Legon Hall</option>
+            <option>Volta Hall</option>
+            <option>Hilla Liman Hall</option>
+            <option>Alexander Kwapong Hall</option>
+            <option>Jean Nelson Hall</option>
+            <option>Elizabeth Hall</option>
+            <option>James Top Hall</option>
+            <option>Bani Hall</option>
+            <option>Africa Unity Hall</option>
+
+        </select>
+
+    </div>
+
+    <br>
+
+        <div id="output">
+
+            <select name="hall_annex">
+
+                <option>
+
+                </option>
+
+            </select>
+
+            <br>
+
+         </div>
+         
+         <br>
+
+         <input type="submit" value="Submit">
+
+
+    </form>
+
+</body>
+
+</html>
+
+
